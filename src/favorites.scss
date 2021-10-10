@@ -1,0 +1,85 @@
+.singleGrid{ 
+	border-radius: 4px; 
+	overflow: hidden; 
+	box-shadow: 0px 0px 11px rgba(0,0,0,.1); 
+	position: relative; 
+	background: #fff; 
+	.favorite{
+		border-radius: 3px; 
+		position: absolute; 
+		z-index: 1; 
+		top: 15px; 
+		left: 15px;
+		background-color: #333; 
+		text-align: center; 
+		padding: 1px 4px;
+		.fa{
+			color: #fff;
+		}
+		&.active{
+			background-color: #ff0058;
+		}		
+	}
+	.imageArea {
+		display: block; 
+		position: relative;
+		height: 350px;
+		padding: 20px 0 0 0;
+		&:after{content: ""; width: 100%; height:50%; opacity: 0.5; display: block; position: absolute; bottom: 0; z-index: 2;
+			background: rgba(237,237,237,0);
+			background: -moz-linear-gradient(top, rgba(237,237,237,0) 0%, rgba(0,0,0,1) 100%);
+			background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(237,237,237,0)), color-stop(100%, rgba(0,0,0,1)));
+			background: -webkit-linear-gradient(top, rgba(237,237,237,0) 0%, rgba(0,0,0,1) 100%);
+			background: -o-linear-gradient(top, rgba(237,237,237,0) 0%, rgba(0,0,0,1) 100%);
+			background: -ms-linear-gradient(top, rgba(237,237,237,0) 0%, rgba(0,0,0,1) 100%);
+			background: linear-gradient(to bottom, rgba(237,237,237,0) 0%, rgba(0,0,0,1) 100%);
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#000000', GradientType=0 );
+		}
+	}
+	.name{
+		padding: 7px 0 13px 0;
+	    overflow: hidden;
+	    text-overflow: ellipsis;
+	    white-space: nowrap;
+	    font-size: 15px;
+	    position: absolute;
+	    bottom: 52px;
+	    left: 15px;
+	    right: 15px;
+	    z-index: 5;
+	    color: #fff;
+	    border-top: 1px solid hsla(0,0%,100%,.25);
+	}
+	.bottomSec{
+		display: block; 
+		padding: 15px 15px;
+		.likeArea{
+			width: 49%; 
+			display: inline-block; 
+			text-align: center; 
+			font-size: 13px; 
+			font-weight: 600; 
+			color: #444;
+		}
+		.actionBtn{
+			width: 49%; 
+			display: inline-block; 
+			text-align: center;
+			.buyNowbtn{
+				color: #fff; 
+				background-color: #0dbc97; 
+				font-size: 14px; 
+				padding: 4px 10px; 
+				font-weight: 600; 
+				border-radius: 4px;
+			}
+		}
+	}	
+}
+@media (max-width:1024px) {
+	.singleGrid{
+		.imageArea{
+			height: auto;
+		}
+	}
+}

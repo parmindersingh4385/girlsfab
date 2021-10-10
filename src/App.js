@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+/* import logo from './logo.svg'; */
+/* import './App.css'; */
+
+import '../node_modules/font-awesome/scss/font-awesome.scss';
+
+import './styles.scss';
+import './favorites.scss';
+import Favorites from './components/Favorites';
 
 function App() {
-  return (
+    return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+		<Favorites></Favorites>
     </div>
-  );
+    );
 }
 
 export default App;
