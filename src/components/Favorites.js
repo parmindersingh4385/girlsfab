@@ -17,13 +17,6 @@ function Favorites() {
         { id: 12, title: 'Product 12', product_url: 'https://amzn.to/2X0vOZy' }
     ];
 
-    const checkBreakPoint = (index) => {  
-        if((index + 1) % 4 == 0){
-            return '<div class="clearfix"> </div><br/>';
-        }
-        return '';
-    }
-
     return (
         <>
             <nav className="navbar fixed-top navbar-light customNav">
