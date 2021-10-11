@@ -1,4 +1,5 @@
 import React from 'react'
+import Webtopnav from './Webtopnav';
 
 function Shoes() {
     const products = [
@@ -18,23 +19,7 @@ function Shoes() {
 
     return (
         <>
-            <nav className="navbar fixed-top navbar-light customNav">
-                <div className="container-fluid ">
-                    <div className="paddingNav">
-                        <div className="logoArea"><img style={{"width": "60px", "height": "58px"}} src="https://girlsfab.herokuapp.com/logo1.png" className="img-fluid web"/> <img routerLink="/home" src="https://girlsfab.herokuapp.com/m-logo.png" className="img-fluid mobile"/></div>
-                        <div className="compNam" routerLink="/home">GirlsFab</div>
-                        <div className="topNav">
-                            <ul>
-                                <li><a routerLink="/home" routerLinkActive="active">HOME</a></li>
-                                <li><a routerLink="/apparel" routerLinkActive="active">APPAREL</a></li>
-                                <li><a routerLink="/shoes" routerLinkActive="active" routerLinkActive="active">SHOES</a></li>
-                                <li><a routerLink="/bags" routerLinkActive="active">BAGS</a></li>
-                                <li><a routerLink="/favorites" routerLinkActive="active">FAVORITES</a></li> 
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </nav>
+            {/* <Webtopnav></Webtopnav> */}
 
             <div class="mobileContainer">
                 <div class="special">
@@ -59,7 +44,7 @@ function Shoes() {
                                                 </div>
                                             </a>
                                         </li>
-                                        {((index + 1) % 4) == 0 ? <><div class="clearfix"> </div> <br/></> : ''}
+                                        {((index + 1) % 4) === 0 ? <><div class="clearfix"> </div> <br/></> : ''}
                                     </div>
                                 ))}  
                                 <div class="clearfix"> </div> 
