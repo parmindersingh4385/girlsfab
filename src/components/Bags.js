@@ -3,18 +3,18 @@ import Webtopnav from './Webtopnav';
 
 function Bags() {
     const products = [
-        { id: 1, title: 'Product 1', price: 1234, product_url: 'https://amzn.to/2X0vOZy', image_url: 'https://m.media-amazon.com/images/I/51E9ySPmXTL.jpg' },
-        { id: 2, title: 'Product 2', price: 1234, product_url: 'https://amzn.to/2X0vOZy', image_url: 'https://m.media-amazon.com/images/I/51E9ySPmXTL.jpg' },
-        { id: 3, title: 'Product 3', price: 1234, product_url: 'https://amzn.to/2X0vOZy', image_url: 'https://m.media-amazon.com/images/I/51E9ySPmXTL.jpg' },
-        { id: 4, title: 'Product 4', price: 1234, product_url: 'https://amzn.to/2X0vOZy', image_url: 'https://m.media-amazon.com/images/I/51E9ySPmXTL.jpg' },
-        { id: 5, title: 'Product 5', price: 1234, product_url: 'https://amzn.to/2X0vOZy', image_url: 'https://m.media-amazon.com/images/I/51E9ySPmXTL.jpg' },
-        { id: 6, title: 'Product 6', price: 1234, product_url: 'https://amzn.to/2X0vOZy', image_url: 'https://m.media-amazon.com/images/I/51E9ySPmXTL.jpg' },
-        { id: 7, title: 'Product 7', price: 1234, product_url: 'https://amzn.to/2X0vOZy', image_url: 'https://m.media-amazon.com/images/I/51E9ySPmXTL.jpg' },
-        { id: 8, title: 'Product 8', price: 1234, product_url: 'https://amzn.to/2X0vOZy', image_url: 'https://m.media-amazon.com/images/I/51E9ySPmXTL.jpg' },
-        { id: 9, title: 'Product 9', price: 1234, product_url: 'https://amzn.to/2X0vOZy', image_url: 'https://m.media-amazon.com/images/I/51E9ySPmXTL.jpg' },
-        { id: 10, title: 'Product 10', price: 1234, product_url: 'https://amzn.to/2X0vOZy', image_url: 'https://m.media-amazon.com/images/I/51E9ySPmXTL.jpg' },
-        { id: 11, title: 'Product 11', price: 1234, product_url: 'https://amzn.to/2X0vOZy', image_url: 'https://m.media-amazon.com/images/I/51E9ySPmXTL.jpg' },
-        { id: 12, title: 'Product 12', price: 1234, product_url: 'https://amzn.to/2X0vOZy', image_url: 'https://m.media-amazon.com/images/I/51E9ySPmXTL.jpg' }
+        { id: 1, title: 'Product 1', price: 1234, product_url: 'https://amzn.to/2X0vOZy', image_url: 'https://m.media-amazon.com/images/I/81sKspLEF-L._AC_UL320_.jpg' },
+        { id: 2, title: 'Product 2', price: 1234, product_url: 'https://amzn.to/2X0vOZy', image_url: 'https://m.media-amazon.com/images/I/81sKspLEF-L._AC_UL320_.jpg' },
+        { id: 3, title: 'Product 3', price: 1234, product_url: 'https://amzn.to/2X0vOZy', image_url: 'https://m.media-amazon.com/images/I/81sKspLEF-L._AC_UL320_.jpg' },
+        { id: 4, title: 'Product 4', price: 1234, product_url: 'https://amzn.to/2X0vOZy', image_url: 'https://m.media-amazon.com/images/I/81sKspLEF-L._AC_UL320_.jpg' },
+        { id: 5, title: 'Product 5', price: 1234, product_url: 'https://amzn.to/2X0vOZy', image_url: 'https://m.media-amazon.com/images/I/81sKspLEF-L._AC_UL320_.jpg' },
+        { id: 6, title: 'Product 6', price: 1234, product_url: 'https://amzn.to/2X0vOZy', image_url: 'https://m.media-amazon.com/images/I/81sKspLEF-L._AC_UL320_.jpg' },
+        { id: 7, title: 'Product 7', price: 1234, product_url: 'https://amzn.to/2X0vOZy', image_url: 'https://m.media-amazon.com/images/I/81sKspLEF-L._AC_UL320_.jpg' },
+        { id: 8, title: 'Product 8', price: 1234, product_url: 'https://amzn.to/2X0vOZy', image_url: 'https://m.media-amazon.com/images/I/81sKspLEF-L._AC_UL320_.jpg' },
+        { id: 9, title: 'Product 9', price: 1234, product_url: 'https://amzn.to/2X0vOZy', image_url: 'https://m.media-amazon.com/images/I/81sKspLEF-L._AC_UL320_.jpg' },
+        { id: 10, title: 'Product 10', price: 1234, product_url: 'https://amzn.to/2X0vOZy', image_url: 'https://m.media-amazon.com/images/I/81sKspLEF-L._AC_UL320_.jpg' },
+        { id: 11, title: 'Product 11', price: 1234, product_url: 'https://amzn.to/2X0vOZy', image_url: 'https://m.media-amazon.com/images/I/81sKspLEF-L._AC_UL320_.jpg' },
+        { id: 12, title: 'Product 12', price: 1234, product_url: 'https://amzn.to/2X0vOZy', image_url: 'https://m.media-amazon.com/images/I/81sKspLEF-L._AC_UL320_.jpg' }
     ];
 
     return (
