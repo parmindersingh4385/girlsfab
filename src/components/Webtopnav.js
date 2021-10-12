@@ -1,11 +1,4 @@
 import React from 'react'
-import { BrowserRouter as Router, Link, Route } from 'react-router-dom'
-
-import Favorites from './Favorites';
-import Apparel from './Apparel';
-import Bags from './Bags';
-import Shoes from './Shoes';
-import Home from './Home'; 
 
 function Webtopnav() {
     return (

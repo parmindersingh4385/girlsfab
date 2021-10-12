@@ -1,5 +1,4 @@
-import React from 'react'
-import Webtopnav from './Webtopnav';
+import React from 'react' 
 
 function Bags() {
     const products = [
@@ -19,8 +18,6 @@ function Bags() {
 
     return (
         <>
-            {/* <Webtopnav></Webtopnav> */}
-
             <div class="mobileContainer">
                 <div class="special">
                     <div class="container">                          

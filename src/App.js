@@ -41,11 +41,12 @@ function App() {
 				
 				<Webtopnav></Webtopnav>
 
-				<Route path="/home"><Home /></Route>            
-				<Route path="/apparel"><Apparel /></Route>
-				<Route path="/shoes"><Shoes /></Route>
-				<Route path="/bags"><Bags /></Route>
-				<Route path="/favorites"><Favorites /></Route>
+				<Route exact path="/"><Home/></Route>
+				<Route exact path="/home"><Home /></Route>            
+				<Route exact path="/apparel"><Apparel /></Route>
+				<Route exact path="/shoes"><Shoes /></Route>
+				<Route exact path="/bags"><Bags /></Route>
+				<Route exact path="/favorites"><Favorites /></Route>
 			</Router>
 		</div>
     );

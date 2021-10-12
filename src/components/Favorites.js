@@ -1,5 +1,4 @@
-import React from 'react'
-import Webtopnav from './Webtopnav';
+import React from 'react' 
 
 function Favorites() {
 
@@ -20,8 +19,6 @@ function Favorites() {
 
     return (
         <> 
-            {/* <Webtopnav></Webtopnav> */}
-
             <div className="mobileContainer">
                 <div className="special">
                     <div className="container">
