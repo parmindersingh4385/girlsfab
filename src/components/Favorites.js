@@ -37,7 +37,7 @@ function Favorites() {
                                     <div className="singleGrid">
                                         <div className="favorite active"><i className="fa fa-heart"></i></div>
                                         <a href={product.product_url} target="_blank" rel="noreferrer">
-                                            <div className="imageArea"><img style={{"width": "255px", "height": "255px"}} src="https://images-na.ssl-images-amazon.com/images/I/61tuQdl2yLL._SL1024_.jpg" className="img-fluid" alt=""/></div>
+                                            <div className="imageArea"><img src="https://images-na.ssl-images-amazon.com/images/I/61tuQdl2yLL._SL1024_.jpg" className="img-fluid" alt=""/></div>
                                             <div className="name">{product.title}</div>
                                             <div className="bottomSec">
                                                 <div className="likeArea"><i className="fa fa-thumbs-up"></i> 200 Likes</div>

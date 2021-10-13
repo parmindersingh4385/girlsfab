@@ -27,7 +27,7 @@ function Bags() {
                                     <div>
                                         <li>
                                             <a href={product.purchase_url} rel="noopener noreferrer" target="_blank">
-                                                <div class="imgOuter"><img style={{"width": "262px", "height": "286px"}}  src={product.image_url} class="img-fluid" alt=""/></div>
+                                                <div class="imgOuter"><img src={product.image_url} class="img-fluid" alt=""/></div>
                                                 <div class="special-info grid_1">
                                                     <h5>{product.title}</h5> 
                                                     <div class="starRating">
