@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter as Router, Link, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Link, Route, NavLink } from 'react-router-dom'
 
 function Webtopnav() {
     return (
@@ -11,11 +11,11 @@ function Webtopnav() {
                         <div className="compNam" routerLink="/home">GirlsFab</div>
                         <div className="topNav">
                             <ul> 
-                                <li><Link to="/home" activeClassName="active">Home</Link></li>
-                                <li><Link to="/apparel" activeClassName="active">Apparel</Link></li>
-                                <li><Link to="/shoes" activeClassName="active">Shoes</Link></li>
-                                <li><Link to="/bags" activeClassName="active">Bags</Link></li>
-                                <li><Link to="/favorites" activeClassName="active">Favorites</Link></li>                                 
+                                <li><NavLink to="/home" activeClassName="active">Home</NavLink></li>
+                                <li><NavLink to="/apparel" activeClassName="active">Apparel</NavLink></li>
+                                <li><NavLink to="/shoes" activeClassName="active">Shoes</NavLink></li>
+                                <li><NavLink to="/bags" activeClassName="active">Bags</NavLink></li>
+                                <li><NavLink to="/favorites" activeClassName="active">Favorites</NavLink></li>                                 
                             </ul>
                         </div>
                     </div>
