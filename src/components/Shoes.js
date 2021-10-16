@@ -1,20 +1,47 @@
 import React from 'react'
 
 function Shoes() {
+    
     const products = [
-        { id: 1, title: 'Product 1', price: 1234, product_url: 'https://amzn.to/2X0vOZy', image_url: 'https://m.media-amazon.com/images/I/51E9ySPmXTL.jpg' },
-        { id: 2, title: 'Product 2', price: 1234, product_url: 'https://amzn.to/2X0vOZy', image_url: 'https://m.media-amazon.com/images/I/51E9ySPmXTL.jpg' },
-        { id: 3, title: 'Product 3', price: 1234, product_url: 'https://amzn.to/2X0vOZy', image_url: 'https://m.media-amazon.com/images/I/51E9ySPmXTL.jpg' },
-        { id: 4, title: 'Product 4', price: 1234, product_url: 'https://amzn.to/2X0vOZy', image_url: 'https://m.media-amazon.com/images/I/51E9ySPmXTL.jpg' },
-        { id: 5, title: 'Product 5', price: 1234, product_url: 'https://amzn.to/2X0vOZy', image_url: 'https://m.media-amazon.com/images/I/51E9ySPmXTL.jpg' },
-        { id: 6, title: 'Product 6', price: 1234, product_url: 'https://amzn.to/2X0vOZy', image_url: 'https://m.media-amazon.com/images/I/51E9ySPmXTL.jpg' },
-        { id: 7, title: 'Product 7', price: 1234, product_url: 'https://amzn.to/2X0vOZy', image_url: 'https://m.media-amazon.com/images/I/51E9ySPmXTL.jpg' },
-        { id: 8, title: 'Product 8', price: 1234, product_url: 'https://amzn.to/2X0vOZy', image_url: 'https://m.media-amazon.com/images/I/51E9ySPmXTL.jpg' },
-        { id: 9, title: 'Product 9', price: 1234, product_url: 'https://amzn.to/2X0vOZy', image_url: 'https://m.media-amazon.com/images/I/51E9ySPmXTL.jpg' },
-        { id: 10, title: 'Product 10', price: 1234, product_url: 'https://amzn.to/2X0vOZy', image_url: 'https://m.media-amazon.com/images/I/51E9ySPmXTL.jpg' },
-        { id: 11, title: 'Product 11', price: 1234, product_url: 'https://amzn.to/2X0vOZy', image_url: 'https://m.media-amazon.com/images/I/51E9ySPmXTL.jpg' },
-        { id: 12, title: 'Product 12', price: 1234, product_url: 'https://amzn.to/2X0vOZy', image_url: 'https://m.media-amazon.com/images/I/51E9ySPmXTL.jpg' }
+        { id: 1, title: 'Product 1', price: 1234, rating: 5, product_url: 'https://amzn.to/2X0vOZy', image_url: 'https://m.media-amazon.com/images/I/71lkjZ2hQ8L._AC_UL320_.jpg' },
+        { id: 2, title: 'Product 2', price: 1234, rating: 4, product_url: 'https://amzn.to/2X0vOZy', image_url: 'https://m.media-amazon.com/images/I/71lkjZ2hQ8L._AC_UL320_.jpg' },
+        { id: 3, title: 'Product 3', price: 1234, rating: 3, product_url: 'https://amzn.to/2X0vOZy', image_url: 'https://m.media-amazon.com/images/I/71lkjZ2hQ8L._AC_UL320_.jpg' },
+        { id: 4, title: 'Product 4', price: 1234, rating: 2, product_url: 'https://amzn.to/2X0vOZy', image_url: 'https://m.media-amazon.com/images/I/71lkjZ2hQ8L._AC_UL320_.jpg' },
+        { id: 5, title: 'Product 5', price: 1234, rating: 1, product_url: 'https://amzn.to/2X0vOZy', image_url: 'https://m.media-amazon.com/images/I/71lkjZ2hQ8L._AC_UL320_.jpg' },
+        { id: 6, title: 'Product 6', price: 1234, rating: 2, product_url: 'https://amzn.to/2X0vOZy', image_url: 'https://m.media-amazon.com/images/I/71lkjZ2hQ8L._AC_UL320_.jpg' },
+        { id: 7, title: 'Product 7', price: 1234, rating: 3, product_url: 'https://amzn.to/2X0vOZy', image_url: 'https://m.media-amazon.com/images/I/71lkjZ2hQ8L._AC_UL320_.jpg' },
+        { id: 8, title: 'Product 8', price: 1234, rating: 4, product_url: 'https://amzn.to/2X0vOZy', image_url: 'https://m.media-amazon.com/images/I/71lkjZ2hQ8L._AC_UL320_.jpg' },
+        { id: 9, title: 'Product 9', price: 1234, rating: 5, product_url: 'https://amzn.to/2X0vOZy', image_url: 'https://m.media-amazon.com/images/I/71lkjZ2hQ8L._AC_UL320_.jpg' },
+        { id: 10, title: 'Product 10', price: 1234, rating: 4, product_url: 'https://amzn.to/2X0vOZy', image_url: 'https://m.media-amazon.com/images/I/71lkjZ2hQ8L._AC_UL320_.jpg' },
+        { id: 11, title: 'Product 11', price: 1234, rating: 3, product_url: 'https://amzn.to/2X0vOZy', image_url: 'https://m.media-amazon.com/images/I/71lkjZ2hQ8L._AC_UL320_.jpg' },
+        { id: 12, title: 'Product 12', price: 1234, rating: 2, product_url: 'https://amzn.to/2X0vOZy', image_url: 'https://m.media-amazon.com/images/I/71lkjZ2hQ8L._AC_UL320_.jpg' },
+        { id: 13, title: 'Product 13', price: 1234, rating: 5, product_url: 'https://amzn.to/2X0vOZy', image_url: 'https://m.media-amazon.com/images/I/71lkjZ2hQ8L._AC_UL320_.jpg' },
+        { id: 14, title: 'Product 14', price: 1234, rating: 4, product_url: 'https://amzn.to/2X0vOZy', image_url: 'https://m.media-amazon.com/images/I/71lkjZ2hQ8L._AC_UL320_.jpg' },
+        { id: 15, title: 'Product 15', price: 1234, rating: 3, product_url: 'https://amzn.to/2X0vOZy', image_url: 'https://m.media-amazon.com/images/I/71lkjZ2hQ8L._AC_UL320_.jpg' },
+        { id: 16, title: 'Product 16', price: 1234, rating: 2, product_url: 'https://amzn.to/2X0vOZy', image_url: 'https://m.media-amazon.com/images/I/71lkjZ2hQ8L._AC_UL320_.jpg' },
+        { id: 17, title: 'Product 17', price: 1234, rating: 1, product_url: 'https://amzn.to/2X0vOZy', image_url: 'https://m.media-amazon.com/images/I/71lkjZ2hQ8L._AC_UL320_.jpg' },
+        { id: 18, title: 'Product 18', price: 1234, rating: 2, product_url: 'https://amzn.to/2X0vOZy', image_url: 'https://m.media-amazon.com/images/I/71lkjZ2hQ8L._AC_UL320_.jpg' },
+        { id: 19, title: 'Product 19', price: 1234, rating: 3, product_url: 'https://amzn.to/2X0vOZy', image_url: 'https://m.media-amazon.com/images/I/71lkjZ2hQ8L._AC_UL320_.jpg' },
+        { id: 20, title: 'Product 20', price: 1234, rating: 4, product_url: 'https://amzn.to/2X0vOZy', image_url: 'https://m.media-amazon.com/images/I/71lkjZ2hQ8L._AC_UL320_.jpg' },
+        { id: 21, title: 'Product 21', price: 1234, rating: 5, product_url: 'https://amzn.to/2X0vOZy', image_url: 'https://m.media-amazon.com/images/I/71lkjZ2hQ8L._AC_UL320_.jpg' },
+        { id: 22, title: 'Product 22', price: 1234, rating: 4, product_url: 'https://amzn.to/2X0vOZy', image_url: 'https://m.media-amazon.com/images/I/71lkjZ2hQ8L._AC_UL320_.jpg' },
+        { id: 23, title: 'Product 23', price: 1234, rating: 3, product_url: 'https://amzn.to/2X0vOZy', image_url: 'https://m.media-amazon.com/images/I/71lkjZ2hQ8L._AC_UL320_.jpg' },
+        { id: 24, title: 'Product 24', price: 1234, rating: 2, product_url: 'https://amzn.to/2X0vOZy', image_url: 'https://m.media-amazon.com/images/I/71lkjZ2hQ8L._AC_UL320_.jpg' }
     ];
+
+    const maxRating = 5;
+        
+    const getRating = ratings => {
+        let ratingHtml = []; 
+        for(var n=1; n<=maxRating; n++){
+            if(n <= ratings){
+                ratingHtml.push(<i class="fa fa-star rate"></i>)
+            }else{
+                ratingHtml.push(<i class="fa fa-star"></i>)
+            } 
+        }
+        return ratingHtml;
+    };
 
     return (
         <>
@@ -31,8 +58,7 @@ function Shoes() {
                                                 <div class="special-info grid_1">
                                                     <h5>{product.title}</h5> 
                                                     <div class="starRating">
-                                                        <i class="fa fa-star rate"></i> 
-                                                        <i class="fa fa-star"></i>
+                                                        {getRating(product.rating)}
                                                     </div> 
                                                     <div class="item_add clearfix">
                                                         <span class="item_price">&#x20B9;{product.price}</span>
