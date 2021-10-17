@@ -1,6 +1,36 @@
 import React from 'react' 
+import { useState, useEffect } from 'react';
 
 function Apparel() {
+
+    const [initState, setInitState] = useState({
+        loading: true,
+        data: [],
+        error: false
+    });
+
+    /* const [apparels, setAppreals] = useState([]); */
+
+
+    useEffect(() => {      
+        const getApparels = async () => {
+            const retData = await getApparelsFromDb(); 
+            //setAppreals(retData);
+            setInitState({
+                loading: false,
+                data: retData,
+                error: false
+            });
+        }
+        getApparels(); 
+    }, []);
+
+    const getApparelsFromDb = async() => {
+        const res = await fetch('https://api-girlsfab.herokuapp.com/products');
+        const data = await res.json();
+        return data;
+    }
+
     const products = [
         { id: 1, title: 'Product 1', price: 1234, rating: 5, product_url: 'https://amzn.to/2X0vOZy', image_url: 'https://m.media-amazon.com/images/I/71lkjZ2hQ8L._AC_UL320_.jpg' },
         { id: 2, title: 'Product 2', price: 1234, rating: 4, product_url: 'https://amzn.to/2X0vOZy', image_url: 'https://m.media-amazon.com/images/I/71lkjZ2hQ8L._AC_UL320_.jpg' },
@@ -42,36 +72,53 @@ function Apparel() {
         return ratingHtml;
     };
 
+    const getProductImage = images => {
+        return images[0];
+    }
+
     return (
         <>
             <div class="mobileContainer">
                 <div class="special">
-                    <div class="container">                          
-                        <div class="specia-top">
-                            <ul class="grid_2">
-                                { products.map( (product, index) => ( 
-                                    <div>
-                                        <li>
-                                            <a href={product.purchase_url} rel="noopener noreferrer" target="_blank">
-                                                <div class="imgOuter"><img src={product.image_url} class="img-fluid" alt=""/></div>
-                                                <div class="special-info grid_1">
-                                                    <h5>{product.title}</h5> 
-                                                    <div class="starRating">
-                                                        {getRating(product.rating)}
-                                                    </div> 
-                                                    <div class="item_add clearfix">
-                                                        <span class="item_price">&#x20B9;{product.price}</span>
-                                                        <span class="buyNowbtn">BUY NOW</span>
+                    <div class="container"> 
+
+                        { initState.loading && <div className="loaderDiv"><i className="fa fa-spinner fa-spin fa-2x"></i></div> }
+
+                        { initState.error &&
+                            <div className="blankMsg">
+                                <div className="iconArea"><i className="fa fa-folder-open"></i></div>
+                                <div className="text">No item found</div>
+                                <div className="textSm">Try to adjusting your search and filter to find what you're looking for</div>
+                            </div> 
+                        }
+
+                        { 
+                            initState.data.length > 0 && <div class="specia-top">
+                                <ul class="grid_2">
+                                    { initState.data.map( (product, index) => ( 
+                                        <div>
+                                            <li>
+                                                <a href={product.brand_url} rel="noopener noreferrer" target="_blank">
+                                                    <div class="imgOuter"><img src={getProductImage(product.images)} class="img-fluid" alt=""/></div>
+                                                    <div class="special-info grid_1">
+                                                        <h5>{product.title}</h5> 
+                                                        <div class="starRating">
+                                                            {getRating(product.total_rating)}
+                                                        </div> 
+                                                        <div class="item_add clearfix">
+                                                            <span class="item_price">{product.list_price}</span>
+                                                            <span class="buyNowbtn">BUY NOW</span>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        {((index + 1) % 4) === 0 ? <><div class="clearfix"> </div> <br/></> : ''}
-                                    </div>
-                                ))}  
-                                <div class="clearfix"> </div> 
-                            </ul>
-                        </div>
+                                                </a>
+                                            </li>
+                                            {((index + 1) % 4) === 0 ? <><div class="clearfix"> </div> <br/></> : ''}
+                                        </div>
+                                    ))}  
+                                    <div class="clearfix"> </div> 
+                                </ul>
+                            </div>
+                        }
                     </div>
                 </div>
             </div>             	 
