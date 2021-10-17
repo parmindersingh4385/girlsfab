@@ -73,7 +73,7 @@ function Apparel() {
     };
 
     const getProductImage = images => {
-        return images[0];
+        return images[2];
     }
 
     return (
