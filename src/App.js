@@ -24,7 +24,7 @@ function App() {
 				{/* <nav className="navbar fixed-top navbar-light customNav">
 					<div className="container-fluid ">
 						<div className="paddingNav">
-							<div className="logoArea"><img style={{"width": "60px", "height": "58px"}} src="https://girlsfab.herokuapp.com/logo1.png" className="img-fluid web"/> <img routerLink="/home" src="https://girlsfab.herokuapp.com/m-logo.png" className="img-fluid mobile"/></div>
+							<div className="logoArea"><img style={{"width": "60px", "height": "58px"}} src="https://girlsfab.onrender.com/logo1.png" className="img-fluid web"/> <img routerLink="/home" src="https://girlsfab.herokuapp.com/m-logo.png" className="img-fluid mobile"/></div>
 							<div className="compNam" routerLink="/home">GirlsFab</div>
 							<div className="topNav">
 								<ul>									
