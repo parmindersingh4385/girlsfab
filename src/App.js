@@ -1,5 +1,3 @@
-/* import logo from './logo.svg'; */
-/* import './App.css'; */
 
 import '../node_modules/font-awesome/scss/font-awesome.scss';
 
