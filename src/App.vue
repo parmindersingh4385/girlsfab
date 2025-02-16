@@ -11,7 +11,7 @@
 <!-- <template>
     <v-app id="inspire">
         <v-app-bar>
-            <v-app-bar-title>GirlsFab</v-app-bar-title>
+            <v-app-bar-title>My store</v-app-bar-title>
         </v-app-bar>
 
         <v-main class="bg-grey-lighten-2">
@@ -58,7 +58,7 @@ const drawer = ref(null);
     <v-app>
         <v-app-bar>
             <!-- Logo or Title -->
-            <v-app-bar-title>GirlsFab</v-app-bar-title>
+            <v-app-bar-title>My store</v-app-bar-title>
             <!-- Spacer to push items to the right -->
             <v-spacer />
             <!-- Navigation Links -->

@@ -1,17 +1,34 @@
-<script setup></script>
+<script setup>
+import { useApparelsStore } from "@/stores/ApparelsStore";
+import { onMounted } from "vue";
+
+const apparelsStore = useApparelsStore();
+
+onMounted(() => {
+    apparelsStore.fetchApparelsData();
+});
+
+const goToProduct = (affilateUrl) => {
+    window.open(affilateUrl);
+};
+</script>
 
 <template>
     <v-container>
         <v-row>
-            <v-col v-for="n in 24" :key="n" cols="4">
-                <v-card class="mx-auto" max-width="400">
-                    <v-img
-                        src="https://m.media-amazon.com/images/I/61RP4y9l2AL._SY741_.jpg"
-                        height="200px"
-                        cover
-                    ></v-img>
+            <v-col
+                v-for="(item, index) in apparelsStore.data"
+                :key="index"
+                cols="3"
+            >
+                <v-card
+                    class="mx-auto"
+                    max-width="400"
+                    @click="goToProduct(item.affilate_url)"
+                >
+                    <v-img :src="item.image_url" height="200px" cover></v-img>
 
-                    <v-card-title>RedTape shoes</v-card-title>
+                    <v-card-title>{{ item.title }}</v-card-title>
 
                     <v-card-text>
                         This is a sample description for the image card.
